@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.main{
+    background-color: #1d2437;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url('../images/bg-blue.png') ;
+    background-size: cover;
+}
+
+.container{
+    color: #FFF;
+    max-width: 1070px;
+    margin: auto;
+}
+.container header{
+    padding-top: 45px;
+}
+.heroarea{
+    display: flex;
+}
+.heroarea .leftside{
+    flex: 1;
+}
+.heroarea .leftside h1{
+    margin-bottom: 30px;
+    font-size: 42px;
+    line-height: 50px;
+    margin-top: 80px;
+}
+.heroarea .leftside p{
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #999;
+}
+.heroarea .leftside .form{
+    margin-bottom: 70px;
+}
+.heroarea .leftside form{
+    display: flex;
+    width: 100%;
+}
+.heroarea .leftside .form input{
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    outline: none;
+    height: 40px;
+    font-size: 14px;
+    padding: 0 10px;
+    background-color: transparent;
+    color: #FFF;
+    width: 300px;
+}
+.heroarea .leftside .form button{
+    height: 40px;
+    padding: 0 20px;
+    background-color:#0071B7;
+    border: 0;
+    color: #FFF;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.heroarea .leftside .form button:hover{
+    opacity:.8;
+}
+
+.heroarea .rightside {
+    flex: 1;
+    background-image: url('../images/hero-curso.png');
+    background-size:auto 100%;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+
+/****** SECTION INFO ******/
+
+.info{
+    height: 100px;
+    border-bottom: 2px solid #eaeef1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info .info--text{
+    font-size: 20px;
+    color: #cdc8cb;
+    font-weight: bold;
+    margin: 0 10px;
+}
+.info .info--circle{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #cdc8cb;
+    margin: 0 10px;
+}
+
+/***** SECTION INSTRUCTIONS ******/
+
+
+.instructions .inst--container{
+    margin: auto;
+    max-width: 900px;
+    padding: 70px 0;
+
+}
+.inst--item{
+    border-left: 3px solid #ECF0F3;
+    display: flex;
+}
+.inst--item:last-child{
+    border: 0;
+}
+.inst--text{
+    flex: 1;
+    margin-left: 50px;
+}
+.inst--text h2{
+    color: #000;
+    font-size: 32px;
+    margin: -10px 0 20px 0;
+}
+.inst--text p{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 70px;
+}
+.inst--item:last-child p{
+    margin: 0;
+}
+.inst--item .circle{
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: #0071B7;
+    margin-left: -9px;
+}
+
+/***** SECTION CTA *****/
+
+.cta {
+    background: #1D2437;
+    border-bottom: 2px solid #777;
+}
+.cta-container{
+    display: flex;
+    max-width: 800px;
+    margin: auto;
+    padding: 100px 0;
+    color: #FFF;
+}
+.cta-left{
+    flex: 1;
+    margin-right: 30px;
+}
+.cta-right{
+    flex: 1;
+    margin-left: 30px;
+}
+.cta h2{
+    font-size: 40px;
+    margin: 0 0 20px 0;
+}
+.cta p{
+    font-size: 18px;
+    line-height: 25px;
+    color: #777;
+}
+.cta-right input {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    outline: none;
+    height: 40px;
+    font-size: 14px;
+    padding: 0 10px;
+    background-color: transparent;
+    color: #FFF;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.cta-right button{
+    height: 40px;
+    padding: 0 20px;
+    background-color:#0071B7;
+    border: 0;
+    color: #FFF;
+    cursor: pointer;
+    width: 100%;
+}
+.cta-right button:hover{
+    opacity: .8;
+}
+
+/**** FOOTER ****/
+
+footer{
+    color: #FFF;
+    background-color: #1D2437;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    max-width: 1070px;
+    padding: 40px 0;
+}
+.footer-right{
+    font-size: 16px;
+    color: #777;
+    text-align: right;
+    line-height: 25px;
+}
+.footer-right a{
+    font-size: 16px;
+    color: #777;
+    text-decoration: none;
+}
+.footer-right a:hover{
+    text-decoration: underline;
+}
+
+
+/**** RESPONSIVIDADE *****/ 
+
+@media (max-width:1030px) {
+    .main .container{
+        padding: 0 20px;
+    }
+    footer .footer-container{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media(max-width:900px){
+    .main .container{
+        padding: 0;
+    }
+    .heroarea{
+        flex-direction: column-reverse;
+    }
+    .heroarea .leftside{
+        margin-top: -30px;
+        z-index: 999;
+    }
+    .container header{
+        padding: 45px 20px 0 20px;
+    }
+    .heroarea .leftside h1{
+        margin-top: 0;
+        text-align: center;
+        padding: 0 20px;
+    }
+    .heroarea .leftside p{
+        text-align: center;
+        padding: 0 20px;
+    }
+    .heroarea .leftside .form{
+        padding: 0 20px;
+    }
+    .heroarea .rightside{
+        height: 400px;
+        flex: none;
+        background-size: auto 100%;
+        background-position-x: center;
+    }
+    .rightside-linear{
+        background: linear-gradient(360deg, #1D2437 8.92%, rgba(29, 36, 55, 0) 65.85%);
+        width: 100%;
+        height: 100%;
+    }
+    .heroarea .leftside form{
+        flex-direction: column;
+    }
+    .heroarea .leftside .form input{
+        width: 100%;
+    }
+    .heroarea .leftside .form button{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .heroarea .tachs {
+        text-align: center;
+    }
+    .info{
+        display: none;
+    }
+    .instructions .inst--item{
+        margin: 0 50px;
+    }
+    .cta .cta-container{
+        flex-direction: column;
+        margin: 0 30px;
+    }
+    .cta-right{
+        margin: 0;
+    }
+    .cta-left{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    footer .footer-container{
+        flex-direction: column;
+    }
+    .footer-container .footer-right{
+        text-align: center;
+        margin-top: 30px;
+    }
+}
+@media (max-width:450px) {
+    .heroarea .leftside h1{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .heroarea .leftside .tachs img {
+        margin-right: 10px;
+    }
+    .cta-left{
+        margin-right: 0px;
+    }
+    .cta-right{
+        margin-left: 0px;
+    }
+    .heroarea .rightside{
+        height: 300px;
+    }
+}
